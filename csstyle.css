@@ -1,0 +1,180 @@
+
+body{
+  animation-name: bckgrndanim;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+@font-face {
+font-family:"Merienda";
+src: url(Merienda-Regular.ttf);
+}
+@font-face {
+  font-family:"Caveat";
+  src: url(Caveatfont.ttf);
+}
+@font-face {
+  font-family:"Macondo";
+  src: url(Macondo-Regular.ttf);
+}
+@font-face {
+  font-family:"Eater";
+  src: url(Eater-Regular.ttf);
+}
+@font-face {
+  font-family: "WaterBrush";
+  src:url(Wbrush.ttf);}
+@font-face {
+  font-family: "Nunito";
+  src:url(Nunito-VariableFont_wght.ttf);
+}
+#anid{
+  animation-name:buttonanim;
+  animation-duration:7s;
+  animation-iteration-count:infinite;
+  background-color: silver;
+}
+#anid:hover{
+  background-color: grey;
+}
+#biv:hover{
+  color: crimson;
+}
+p{
+  font-family: "Nunito";
+  color: aqua;
+  font-style: italic;
+  font-size: 0px;
+  animation-name: permappeartxt;
+  animation-duration: 10000000s;
+  animation-delay:7s;
+  animation-iteration-count:3;
+}
+h1{
+font-family:"WaterBrush";
+color:#21de54;
+font-size:43px;
+animation-name: whydoIdo;
+animation-duration: 30s;
+animation-iteration-count: infinite;
+/*text-shadow: green 5px 5px;*/
+}
+#hruno{
+box-shadow: grey 5px 5px;
+}
+h2{
+  font-family: "Merienda";
+color:aqua;
+font-size: 20px;
+}
+.wowz{
+background-color: black;
+}
+h2:hover{
+animation-name:h2anim;
+animation-duration: 12s;
+animation-iteration-count: infinite;
+text-shadow: grey 0px -3px;
+}
+@keyframes bckgrndanim{
+  0%   {background: url("backgroundpartuno.jpg"); }
+  2%   {background: url("bgp2.jpg"); }
+  4%   {background: url("bgp3.jpg"); }
+  6%   {background: url("bgp4.jpg"); }
+  8%   {background: url("bgp5.jpg"); }
+  10%   {background: url("bgp6.jpg"); }
+  12%   {background: url("bgp7.jpg"); }
+  14%   {background: url("bgp9.jpg"); }
+  16%   {background: url("bgp8.jpg");}
+  18%   {background: url("bgp10.jpg"); }
+  21%   {background: url("bgp11.jpg"); }
+  24%   {background: url("bgp12.jpg"); }
+  27%   {background: url("bgp13.jpg"); }
+  30%   {background: url("bgp14.jpg"); }
+  33%   {background: url("bgp15.jpg"); }
+  36%   {background: url("bgp16.jpg"); }
+  38%   {background: url("bgp17.jpg"); }
+  41%   {background: url("bgp18.jpg"); }
+  43%   {background: url("bgp19.jpg"); }
+  46%   {background: url("bgp20.jpg"); }
+  48%   {background: url("bgp19.jpg"); }
+  50%   {background: url("bgp18.jpg"); }
+  53%   {background: url("bgp17.jpg"); }
+  56%   {background: url("bgp16.jpg"); }
+  59%   {background: url("bgp15.jpg"); }
+  62%   {background: url("bgp14.jpg"); }
+  65%   {background: url("bgp13.jpg"); }
+  68%   {background: url("bgp12.jpg");}
+  71%   {background: url("bgp11.jpg"); }
+  74%   {background: url("bgp10.jpg"); }
+  77%   {background: url("bgp8.jpg"); }
+  79%   {background: url("bgp9.jpg");}
+  82%   {background: url("bgp7.jpg"); }
+  85%   {background: url("bgp6.jpg"); }
+  88%   {background: url("bgp5.jpg");}
+  91%   {background: url("bgp4.jpg"); }
+  94%   {background: url("bgp3.jpg"); left:0px; top:0px;}
+  97%   {background: url("bgp2.jpg"); left:0px; top:0px;}
+  100%   {background: url("backgroundpartuno.jpg"); left:0px; top:0px;}
+}
+#idd{
+  background: url("blueglass.jpg");
+  color:#10ED8C;
+  font-size: 24px;
+  font-family: "Macondo";
+}
+#idd:hover{
+  animation-name: bordercolors;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+@keyframes bordercolors {
+0%  {border-color: green green green lime}
+5%  {border-color: green lime lime lime}
+10% {border-color: lime lime coral coral}
+15% {border-color: coral coral coral aqua}
+20% {border-color: coral aqua aqua aqua }
+25% {border-color: aqua aqua blue blue}
+30% {border-color: blue blue blue violet}
+35% {border-color: blue violet violet violet}
+40% {border-color: violet violet red red}
+45% {border-color: red red red orange}
+50% {border-color: red orange orange orange}
+55% {border-color: orange orange pink pink}
+60% {border-color: pink pink pink silver}
+65% {border-color: pink silver silver silver}
+70% {border-color: silver silver white white}
+75% {border-color: white white white gold}
+80% {border-color: white gold gold gold}
+85% {border-color: gold gold yellow yellow}
+90% {border-color: yellow yellow yellow green}
+95% {border-color: yellow green green green}
+100%{border-color: green green green lime}
+}
+@keyframes whydoIdo {
+0%  {text-shadow: green 7px 7px}
+10% {text-shadow: orange 7px 7px}
+20% {text-shadow: red 7px 7px}
+30% {text-shadow: purple 7px 7px}
+40% {text-shadow: blue 7px 7px}
+50% {text-shadow: aqua 7px 7px}
+60% {text-shadow: white 7px 7px}
+70% {text-shadow: silver 7px 7px}
+80% {text-shadow: gold 7px 7px}
+90% {text-shadow: yellow 7px 7px}
+99% {text-shadow: lime 7px 7px}
+100%{text-shadow: green 7px 7px}
+}
+@keyframes permappeartxt {
+0% {font-size: 20px}
+100%{font-size: 20px}
+}
+@keyframes buttonanim {
+0%{color:blue; box-shadow: lime 9px 9px;border-color: red}
+50%{color:green;box-shadow: blue 9px 9px;border-color: purple;font-family: "Eater"}
+100%{color:blue;box-shadow: lime 9px 9px;border-color: red}
+}
+@keyframes h2anim {
+ 0%  {color:silver}
+ 50% {color: gold}
+ 100%{color:silver}
+}
