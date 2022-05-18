@@ -187,4 +187,19 @@ if(energy1-2>-0.5){
 hp1=hp1+18;
 spikes1=spikes1+1;
 }}
+else if(x==17){
+if (energy1>-0.5) {
+energy1=-0.5;
+hp1=hp1+parseInt(Math.floor(Math.random()*10));
+}}
+else if(x==18){
+if (energy1>-0.5) { 
+energy1=-0.5;
+spikes1=spikes1+parseInt(Math.floor(Math.random()*10));
+}}
+else if(x==19){
+if (energy1>-0.5) { 
+energy1=-0.5;
+hp2=hp2-parseInt(Math.floor(Math.random()*10));
+}}
 }}
