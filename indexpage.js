@@ -9,11 +9,11 @@ var hp1=50;
 var z2=0;
 var energy2=5;
 var hp2=50;
-var itemlist=['spear','shortsword','longsword','cleaver','numchucks','staff','stick','morningstar','kitesheild','romansheild','smallsheild','buckler','sheild','brigandine','gamberson','plate-armor','chainmail','healring','strengthring','spikerose']
-var tableplacep1t1=[t1p1r1d1,t1p1r1d2,t1p1r1d3,t1p1r1d4,t1p1r2d1,t1p1r2d2,t1p1r2d3,t1p1r2d4,t1p1r3d1,t1p1r3d2,t1p1r3d3,t1p1r3d4,t1p1r4d1,t1p1r4d2,t1p1r4d3,t1p1r4d4];
-var tableplacep2t1=[t1p2r1d1,t1p2r1d2,t1p2r1d3,t1p2r1d4,t1p2r2d1,t1p2r2d2,t1p2r2d3,t1p2r2d4,t1p2r3d1,t1p2r3d2,t1p2r3d3,t1p2r3d4,t1p2r4d1,t1p2r4d2,t1p2r4d3,t1p2r4d4];
-var tableplacep1t2=[t2p1r1d1,t2p1r1d2,t2p1r1d3,t2p1r1d4,t2p1r2d1,t2p1r2d2,t2p1r2d3,t2p1r2d4];
-var tableplacep2t2=[t2p2r1d1,t2p2r1d2,t2p2r1d3,t2p2r1d4,t2p2r2d1,t2p2r2d2,t2p2r2d3,t2p2r2d4];
+var itemlist=['spear','shortsword','longsword','cleaver','numchucks','staff','stick','morningstar','kitesheild','romansheild','smallsheild','buckler','sheild','brigandine','gamberson','plate-armor','chainmail','healring','strengthring','spikerose'];
+var tableplacep1t1=['t1p1r1d1','t1p1r1d2','t1p1r1d3','t1p1r1d4','t1p1r2d1','t1p1r2d2','t1p1r2d3','t1p1r2d4','t1p1r3d1','t1p1r3d2','t1p1r3d3','t1p1r3d4','t1p1r4d1','t1p1r4d2','t1p1r4d3','t1p1r4d4'];
+var tableplacep2t1=['t1p2r1d1','t1p2r1d2','t1p2r1d3','t1p2r1d4','t1p2r2d1','t1p2r2d2','t1p2r2d3','t1p2r2d4','t1p2r3d1','t1p2r3d2','t1p2r3d3','t1p2r3d4','t1p2r4d1','t1p2r4d2','t1p2r4d3','t1p2r4d4'];
+var tableplacep1t2=['t2p1r1d1','t2p1r1d2','t2p1r1d3','t2p1r1d4','t2p1r2d1','t2p1r2d2','t2p1r2d3','t2p1r2d4'];
+var tableplacep2t2=['t2p2r1d1','t2p2r1d2','t2p2r1d3','t2p2r1d4','t2p2r2d1','t2p2r2d2','t2p2r2d3','t2p2r2d4'];
 alert(itemlist.length);
 function newitems(){
   var count=0;
@@ -25,8 +25,8 @@ function newitems(){
   count=count+1;
   var m1z=chooseitem(math1z);
   var m2z=chooseitem(math2z);
-  document.getElementById(p1+'').innerHTML="<input type='button'onclick='useit(math1z)'value='m1z'";
-  document.getElementById(p2+'').innerHTML="<input type='button'onclick='useit(math2z)'value='m2z'";
+  document.getElementById(p1).innerHTML="<input type='button'onclick='useit(math1z)'value='m1z'";
+  document.getElementById(p2).innerHTML="<input type='button'onclick='useit(math2z)'value='m2z'";
 }
 function startgame(){
   document.getElementById('idd').value;
@@ -45,6 +45,26 @@ function newturn(){
   energy1=5;
   energy2=5;
   newitems();
+}
+function a(){
+ var jump = document.getElementById("thisplace").value;
+  
+}
+function b(){
+  var last = "
+  for(var i = 0;i<=tableplacep1t1.length;i++){
+    if(tableplacep1t1[i]==""){
+      tableplacep1t1[i] = tableplacep1t1[i+1];
+    }
+  }
+}
+function b1(){
+var last = "
+  for(var i = 0;i<=tableplacep2t1.length;i++){
+    if(tableplacep2t1[i]==""){
+      tableplacep2t1[i] = tableplacep2t1[i+1];
+    }
+  }
 }
 
 function loadgame(){
@@ -75,7 +95,7 @@ if(energy1-1>-0.5){
 else if (parseInt(Math.floor(Math.random()*10))==10) {
 
 }}
-}
+
 else if (x==2) {
 if(energy1-3>-0.5);{
 energy1=energy1-3;
