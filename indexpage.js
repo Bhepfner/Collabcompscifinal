@@ -4,10 +4,10 @@
 //var passive=['healring','spikerose','strengthring'];
 //20 items
 var z1=0;
-var energy1=0;
+var energy1=5;
 var hp1=50;
 var z2=0;
-var energy2=0;
+var energy2=5;
 var hp2=50;
 var itemlist=['spear','shortsword','longsword','cleaver','numchucks','staff','stick','morningstar','kitesheild','romansheild','smallsheild','buckler','sheild','brigandine','gamberson','plate-armor','chainmail','healring','strengthring','spikerose'],;
 var tableplacep1t1=[t1p1r1d1,t1p1r1d2,t1p1r1d3,t1p1r1d4,t1p1r2d1,t1p1r2d2,t1p1r2d3,t1p1r2d4,t1p1r3d1,t1p1r3d2,t1p1r3d3,t1p1r3d4,t1p1r4d1,t1p1r4d2,t1p1r4d3,t1p1r4d4];
@@ -41,6 +41,12 @@ function startgame(){
   document.getElementById('ifnot').innerHTML="Error: please type yes or no";
   }
 }
+function newturn(){
+  energy1=5;
+  energy2=5;
+  newitems();
+}
+  
 function loadgame(){
   document.getElementsByClassName('wowz').innerHTML="<table id='maintable'><tr><td id='p1t1'></td><td id='p2t1'></td></tr><br><tr><td id='p1t2'></td><td id='p2t2'></td></tr>/table>";
   document.getElementById('p1t1').innerHTML="<table id='ttable1'><tr><td id='t1p1r1d1'></td><td id='t1p1r1d2'></td><td id='t1p1r1d3'></td><td id='t1p1r1d4'></td></tr><tr><td id='t1p1r2d1'></td><td id='t1p1r2d2'></td><td id='t1p1r2d3'></td><td id='t1p1r2d4'></td></tr><tr><td id='t1p1r3d1'></td><td id='t1p1r3d2'></td><td id='t1p1r3d3'></td><td id='t1p1r3d4'></td></tr><tr><td id='t1p1r4d1'></td><td id='t1p1r4d2'></td><td id='t1p1r4d3'></td><td id='t1p1r4d4'></td></tr.</table>";
@@ -51,11 +57,7 @@ function loadgame(){
 }
 function actualgameplay(){
 
- if(z1==0){
- energy1=5;
-}
-z1=z1+1;
-while (energy>0){
+while (energy>-0.5){
 if(x==0){
 if(energy1-2>-0.5){
  energy1=energy1-2;
