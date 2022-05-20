@@ -32,7 +32,7 @@ function startgame(){
   document.getElementById('idd').value;
   if(value==yes){
     document.getElementById('ifnot').innerHTML="Welcome to the game!";
-    loadgame()
+    loadgame();
   }
   else if(value==no){
   document.getElementById('ifnot').innerHTML=":c"+"<br>"+"If you do want to play type yes";
@@ -52,12 +52,8 @@ function a(){
   tableplacep1t1[jump] = tableplacep2t1[jump1];
   tableplacep2t1[jump1] = tableplacep1t1[jump];
 }
-function a1(){
- var jump1 = document.getElementById("thisplace1").value;
-  
-}
 function b(){
-  var last = "
+  var last = "";
   for(var i = 0;i<=tableplacep1t1.length;i++){
     if(tableplacep1t1[i]==""){
       tableplacep1t1[i] = tableplacep1t1[i+1];
