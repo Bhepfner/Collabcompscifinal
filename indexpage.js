@@ -61,7 +61,7 @@ function b(){
   }
 }
 function b1(){
-var last = "
+var last = "";
   for(var i = 0;i<=tableplacep2t1.length;i++){
     if(tableplacep2t1[i]==""){
       tableplacep2t1[i] = tableplacep2t1[i+1];
