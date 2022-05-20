@@ -17,16 +17,18 @@ var tableplacep2t2=['t2p2r1d1','t2p2r1d2','t2p2r1d3','t2p2r1d4','t2p2r2d1','t2p2
 alert(itemlist.length);
 function newitems(){
   var count=0;
-  while(count<8);
-  var math1z= parseInt(Math.floor(Math.random()*20));
-  var math2z= parseInt(Math.floor(Math.random()*20));
-  var p1=tableplacep1t2[count];
-  var p2=tableplacep2t2[count];
-  count=count+1;
-  var m1z=chooseitem(math1z);
-  var m2z=chooseitem(math2z);
-  document.getElementById(p1).innerHTML="<input type='button'onclick='useit(math1z)'value='m1z'";
-  document.getElementById(p2).innerHTML="<input type='button'onclick='useit(math2z)'value='m2z'";
+  while(count<8)
+  {
+     var math1z= parseInt(Math.floor(Math.random()*20));
+     var math2z= parseInt(Math.floor(Math.random()*20));
+     var p1=tableplacep1t2[count];
+     var p2=tableplacep2t2[count];
+      count=count+1;
+      var m1z=chooseitem(math1z);
+      var m2z=chooseitem(math2z);
+      document.getElementById(p1).innerHTML="<input type='button'onclick='useit(math1z)'value='m1z'";
+      document.getElementById(p2).innerHTML="<input type='button'onclick='useit(math2z)'value='m2z'";
+    }
 }
 function startgame(){
   var value = document.getElementById('idd').value;
