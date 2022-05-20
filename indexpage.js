@@ -201,7 +201,7 @@ hp1=hp1+20;
 spikes1=spikes1+10;
 }}
 else if (x==14) {
-if(energy1-1>-0.5)
+if(energy1-1>-0.5){
 energy1=energy1-1;
 hp1=hp1+9;
 }}
