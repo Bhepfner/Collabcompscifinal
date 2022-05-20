@@ -48,6 +48,12 @@ function newturn(){
 }
 function a(){
  var jump = document.getElementById("thisplace").value;
+ var jump1 = document.getElementById("thisplace1").value;
+  tableplacep1t1[jump] = tableplacep2t1[jump1];
+  tableplacep2t1[jump1] = tableplacep1t1[jump];
+}
+function a1(){
+ var jump1 = document.getElementById("thisplace1").value;
   
 }
 function b(){
