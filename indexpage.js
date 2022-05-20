@@ -26,8 +26,8 @@ function newitems(){
       count=count+1;
       var m1z=chooseitem(math1z);
       var m2z=chooseitem(math2z);
-      document.getElementById(p1).innerHTML="<input type='button'onclick='useit(math1z)'value='m1z'";
-      document.getElementById(p2).innerHTML="<input type='button'onclick='useit(math2z)'value='m2z'";
+      document.getElementById(p1).innerHTML="<input type='button'onclick='useit(math1z)'value='m1z'>";
+      document.getElementById(p2).innerHTML="<input type='button'onclick='useit(math2z)'value='m2z'>";
     }
 }
 function startgame(){
