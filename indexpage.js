@@ -29,12 +29,12 @@ function newitems(){
   document.getElementById(p2).innerHTML="<input type='button'onclick='useit(math2z)'value='m2z'";
 }
 function startgame(){
-  document.getElementById('idd').value;
-  if(value==yes){
+  var value = document.getElementById('idd').value;
+  if(value=="yes"){
     document.getElementById('ifnot').innerHTML="Welcome to the game!";
     loadgame();
   }
-  else if(value==no){
+  else if(value=="no"){
   document.getElementById('ifnot').innerHTML=":c"+"<br>"+"If you do want to play type yes";
   }
   else{
