@@ -51,8 +51,10 @@ function newturn(){
 function a(){
  var jump = document.getElementById("thisplace").value;
  var jump1 = document.getElementById("thisplace1").value;
-  tableplacep1t1[jump] = tableplacep2t1[jump1];
-  tableplacep2t1[jump1] = tableplacep1t1[jump];
+  var leap = tableplacep1t1[jump];
+  var leap1 = tableplacep2t1[jump1];
+  tableplacep1t1[jump] = leap1;
+  tableplacep2t1[jump1] = leap;
 }
 function b(){
   var last = "";
