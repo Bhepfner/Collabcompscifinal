@@ -111,7 +111,7 @@ if (parseInt(Math.floor(Math.random()*10))==10) {
 hp2=hp2-5;
 }
 else if (parseInt(Math.floor(Math.random()*10))==9) {
-hp2=hp2-4;
+hp2=hp2-4;}
 else if (parseInt(Math.floor(Math.random()*10))==7) {
 }
 hp2=hp2-3;
